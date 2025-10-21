@@ -88,6 +88,73 @@
 </iframe>
   </details>
 </section>
+<section>
+<details closed><summary><strong>HTML Basics</strong>
+<time datetime="2025-10-21">2025-10-21</time></summary>
+<p>Finalised HTML Basics subcourse</p>
+</details>
+</section>
+<section>
+  <details closed>
+    <summary><strong>Lesson Notes: Semantic HTML</strong>
+    <time datetime="2025-10-21">2025-10-21</time></summary>
+
+    <p>In this lesson I started looking at <strong>semantic HTML</strong>. I learned about different elements such as 
+    <code>&lt;i&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;b&gt;</code>, and <code>&lt;strong&gt;</code>, and how they differ. 
+    The first two mainly add <em>visual</em> or tonal emphasis, while the latter two give <strong>semantic</strong> meaning 
+    — helping browsers and screen readers understand importance or stress in content.</p>
+
+    <p>Then I moved on to <strong>description lists</strong>, which are used for things like glossaries or definitions.  
+    A description list uses a <code>&lt;dl&gt;</code> container, with one or more 
+    <code>&lt;dt&gt;</code> (description terms) followed by <code>&lt;dd&gt;</code> (description details).  
+    A single term can even have multiple details attached to it. Example:</p>
+
+    <pre><code>&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+
+    <p>Next came <strong>block and inline quotes</strong>.  
+    The <code>&lt;blockquote&gt;</code> element is used for longer quotations, and it can include a 
+    <code>cite</code> attribute that holds a source URL — useful for screen readers and crawlers.  
+    The <code>&lt;q&gt;</code> element, on the other hand, is for short inline quotes that stay within a paragraph.  
+    There’s also a separate <code>&lt;cite&gt;</code> element, which is used to reference the name of a work or author, not a URL.</p>
+
+    <p>After that, I looked at <strong>abbreviations</strong>.  
+    Using <code>&lt;abbr&gt;</code> alone doesn’t change anything visually, but when combined with the 
+    <code>title</code> attribute — for example 
+    <code>&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</code> — the full term appears when hovering over it.  
+    That tiny touch of accessibility is pretty neat.</p>
+
+    <p>Then came the <strong>address element</strong>.  
+    It’s surprisingly versatile — perfect for contact sections, author info, or business pages.  
+    It should be used instead of a generic <code>&lt;div&gt;</code> when marking up contact details.  
+    Inside it, I can use <code>&lt;br&gt;</code> for line breaks, and links like <code>tel:</code> or <code>mailto:</code> 
+    to make phone numbers and emails clickable:</p>
+
+    <pre><code>&lt;address&gt;
+  John Doe&lt;br&gt;
+  Streetname 123&lt;br&gt;
+  Utrecht, Netherlands&lt;br&gt;
+  &lt;a href="tel:+31612345678"&gt;+31 6 12345678&lt;/a&gt;&lt;br&gt;
+  &lt;a href="mailto:info@example.com"&gt;info@example.com&lt;/a&gt;
+&lt;/address&gt;
+</code></pre>
+
+    <p>I wrapped up with the <strong>time element</strong>, which marks moments or dates.  
+    The <code>datetime</code> attribute converts it into a machine-readable format using the ISO 8601 standard.  
+    Example:</p>
+
+    <pre><code>&lt;time datetime="2025-10-21T19:48"&gt;This is right now.&lt;/time&gt;
+</code></pre>
+
+    <p>Overall, this lesson really showed how much clarity and meaning semantic HTML adds — not just for styling, 
+    but for accessibility, SEO, and general structure. It’s the difference between a web page that only <em>looks</em> right, 
+    and one that actually <strong>communicates</strong> right.</p>
+
+  </details>
+</section>
 
 </body>
 </html>
