@@ -223,5 +223,114 @@
 </iframe>
   </details>
 </section>
+<section>
+  <details closed>
+    <summary>
+      <strong>Semantic HTML - Review</strong>
+      <time datetime="2025-10-30" style="margin-left:8px; color:#777; font-size:0.9em;">
+      2025-10-30</time>
+    </summary>
+    <h2>Semantic HTML — Review</h2>
+
+  <p>Semantic HTML is important to maintain the structural hierarchy of content. For example, using the
+    heading elements <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> in the correct order.</p>
+
+  <p>Presentational HTML elements such as <code>&lt;center&gt;</code>, <code>&lt;big&gt;</code>, and
+    <code>&lt;font&gt;</code> are considered outdated. Semantic elements, on the other hand, add meaning and structure to content.</p>
+
+  <p>Common semantic elements include <code>&lt;nav&gt;</code>, <code>&lt;header&gt;</code>, and
+    <code>&lt;figure&gt;</code>. The <code>&lt;header&gt;</code> element defines the header of a document or
+    section, while the <code>&lt;main&gt;</code> element contains the main content of a web page. The
+    <code>&lt;section&gt;</code> element divides content into smaller, logical parts. The
+    <code>&lt;nav&gt;</code> element represents navigation links, and <code>&lt;figure&gt;</code> is used to
+    group illustrations or diagrams.</p>
+
+  <p><code>&lt;em&gt;</code> (emphasis) marks text with stress emphasis, while
+    <code>&lt;i&gt;</code> (idiomatic text) highlights alternative voice or mood, foreign or technical terms, or
+    thoughts. The <code>lang</code> attribute can specify the language of content inside an element. The
+    <code>&lt;strong&gt;</code> element indicates importance, whereas <code>&lt;b&gt;</code> (bring attention to)
+    highlights text without adding importance—useful for things like product names in reviews.</p>
+
+  <p>The <code>&lt;dl&gt;</code> (description list), <code>&lt;dt&gt;</code> (description term), and
+    <code>&lt;dd&gt;</code> (description detail) elements define term–description pairs. The
+    <code>&lt;blockquote&gt;</code> element represents a quoted section from another source, with the
+    <code>cite</code> attribute specifying the source URL. The <code>&lt;cite&gt;</code> element itself is used
+    to visually attribute a referenced work. Short inline quotations use the
+    <code>&lt;q&gt;</code> element.</p>
+
+  <p>The <code>&lt;abbr&gt;</code> element represents abbreviations or acronyms. With its
+    <code>title</code> attribute, you can define the full form (e.g. <abbr title="HyperText Markup Language">HTML</abbr>).</p>
+
+  <p><code>&lt;address&gt;</code> defines contact information, while <code>&lt;time&gt;</code> represents a time
+    or date. The <code>datetime</code> attribute makes it machine-readable (ISO 8601 format).</p>
+
+  <p>For mathematical or chemical notation, <code>&lt;sup&gt;</code> (superscript) and
+    <code>&lt;sub&gt;</code> (subscript) are used—for example 4<sup>2</sup> and CO<sub>2</sub>.</p>
+
+  <p>The <code>&lt;code&gt;</code> element represents inline code fragments, and when combined with
+    <code>&lt;pre&gt;</code>, it can show preformatted blocks:</p>
+
+  <pre><code>body {
+  color: red;
+}</code></pre>
+
+  <p><code>&lt;u&gt;</code> (unarticulated annotation) marks text with non-textual annotation, and
+    <code>&lt;ruby&gt;</code> is used for East Asian typography to show pronunciation or meaning.
+    Inside <code>&lt;ruby&gt;</code>, the <code>&lt;rt&gt;</code> (ruby text) provides the annotation itself, and
+    <code>&lt;rp&gt;</code> (ruby parenthesis) defines fallback parentheses for unsupported browsers.</p>
+
+  <p>Finally, the <code>&lt;s&gt;</code> (strikethrough) element represents content that is no longer accurate or
+    relevant.</p>
+
+  <p><em>That wraps up the review of semantic HTML elements.</em></p>
+  </details>
+</section>
+<section id="forms-intro">
+  <details closed><summary><strong>Introduction to Forms</strong>
+  <time datetime="2025-10-30" style="margin-left:8px; color:#777; font-size:0.9em;">
+      2025-10-30</time></summary>
+  <h2>HTML Forms — Introduction</h2>
+
+  <p>
+    Form elements are used to <strong>collect information from the user</strong>.  
+    A form is created using the <code>&lt;form&gt;</code> element, which acts as a container for input fields, labels, buttons, and other form-related elements.
+  </p>
+
+  <p>
+    The <code>action</code> attribute of the form specifies <em>where</em> the data will be sent when the form is submitted (usually a server or script).  
+    In this example, the <code>action</code> attribute is left empty (<code>action=""</code>), which means the form doesn't actually send data anywhere yet — perfect for practice or static pages.
+  </p>
+
+  <pre><code>&lt;form action=""&gt;
+  &lt;label for="email"&gt; Email Address: &lt;/label&gt;
+  &lt;input type="email" id="email" placeholder="example@email.com" /&gt;
+&lt;/form&gt;
+</code></pre>
+
+  <p>
+    Inside the form we use a <code>&lt;label&gt;</code> element to describe what kind of input the user should provide.
+    The <code>for</code> attribute on the label connects it to an input field with a matching <code>id</code>.  
+    This connection improves accessibility and lets users click the label to focus the corresponding input.
+  </p>
+
+  <p>
+    The <code>&lt;input&gt;</code> element is used to actually collect data.  
+    Here, the <code>type="email"</code> attribute specifies that the input expects an email address — browsers can then provide email-specific validation and a suitable keyboard on mobile devices.  
+    The <code>placeholder</code> attribute shows example text (like <em>example@email.com</em>) to guide the user, which disappears when the user starts typing.
+  </p>
+
+  <p>
+    Later on, forms can include various types of inputs — such as <code>text</code>, <code>password</code>, <code>number</code>, <code>checkbox</code>, <code>radio</code>, and more — as well as elements like
+    <code>&lt;textarea&gt;</code> for longer text and <code>&lt;button&gt;</code> for submission.
+  </p>
+
+  <p><em>Example rendered below:</em></p>
+
+  <form action="">
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" placeholder="example@email.com" />
+  </form>
+  </details>
+</section>
 </body>
 </html>
